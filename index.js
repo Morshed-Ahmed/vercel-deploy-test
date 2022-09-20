@@ -8,6 +8,9 @@ app.get("/", (req, res) => {
 app.get("/product", (req, res) => {
   res.send("This is product route");
 });
+app.get("/product/details", (req, res) => {
+  res.send("This is product details route");
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
